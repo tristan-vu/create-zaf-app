@@ -3,6 +3,8 @@ const autoprefixer = require('autoprefixer')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 
 module.exports = (env = {}) => {
+
+  console.log("test")
   return {
     entry: './src/index.tsx',
     output: {
