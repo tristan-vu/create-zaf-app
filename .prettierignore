@@ -1,0 +1,5 @@
+package-lock.json
+coverage/
+dist/assets
+dist/zcli.apps.config.json
+dist/manifest.json

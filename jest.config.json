@@ -1,0 +1,22 @@
+{
+    "coverageDirectory": "./coverage",
+    "collectCoverageFrom": ["src/**/*.{ts,tsx}"],
+
+    "testMatch": ["**/__tests__/**/*.spec.[jt]s?(x)", "**/?(*.)+(spec|test).[tj]s?(x)"],
+    "transform": {
+        "^.+\\.tsx?$": "ts-jest",
+        "^.+\\.(js|jsx)$": "babel-jest",
+        "^.+\\.svg$": "<rootDir>/__tests__/svgTransform.js"
+    },
+    "transformIgnorePatterns": [
+        "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$",
+        "^.+\\.module\\.(css|sass|scss)$"
+    ],
+    "setupFiles": ["<rootDir>/jest-setup.js"],
+    "setupFilesAfterEnv": ["@testing-library/jest-dom/extend-expect"],
+    "resetMocks": false,
+    "clearMocks": true,
+    "testEnvironment": "jsdom",
+    "preset": "ts-jest",
+    "moduleFileExtensions": ["ts", "tsx", "js", "json"]
+}
