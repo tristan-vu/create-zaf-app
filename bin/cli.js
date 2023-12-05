@@ -19,7 +19,7 @@ const git_repo = "https://github.com/tristan-vu/create-zaf-app";
 try {
     fs.mkdirSync(projectPath);
   } catch (err) {
-    if (err.code === 'EEXIST') {
+    if (err.code === 'EXIST') {
       console.log(`The file ${projectName} already exist in the current directory, please give it another name.`);
     } else {
       console.log(error);
